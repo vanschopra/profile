@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vanshika Chopra | Portfolio
+
+Personal portfolio website built with **Next.js 16**, **React 19**, and **Tailwind CSS v4**.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **UI Library:** React 19
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Typography:** Inter & Playfair Display (Google Fonts)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy on Render
 
-## Learn More
+This project is configured for deployment on [Render](https://render.com) as a **Web Service**.
 
-To learn more about Next.js, take a look at the following resources:
+### Step-by-step deployment guide
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. A [Render](https://render.com) account (free tier available)
+2. This repository pushed to GitHub
 
-## Deploy on Vercel
+#### Steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Push to GitHub** (if not already done):
+   ```bash
+   git remote add origin https://github.com/vanschopra/profile.git
+   git branch -M main
+   git push -u origin main
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Log in to Render** at [dashboard.render.com](https://dashboard.render.com).
+
+3. **Create a new Web Service:**
+   - Click **"New +"** → **"Web Service"**
+   - Connect your GitHub account and select the `vanschopra/profile` repository
+   - Or use the "Public Git Repository" option and paste: `https://github.com/vanschopra/profile`
+
+4. **Configure the service:**
+   | Setting | Value |
+   |---|---|
+   | **Name** | `vanshika-portfolio` |
+   | **Runtime** | Node |
+   | **Region** | `Oregon` (or nearest to you) |
+   | **Branch** | `main` |
+   | **Build Command** | `npm install && npm run build` |
+   | **Start Command** | `npm start` |
+   | **Plan** | Free |
+
+5. **Set environment variables** (optional, but recommended):
+   | Key | Value |
+   |---|---|
+   | `NODE_ENV` | `production` |
+   | `NODE_VERSION` | `20` |
+
+6. **Click "Create Web Service"** — Render will automatically:
+   - Clone the repository
+   - Install dependencies (`npm install`)
+   - Build the Next.js app (`npm run build`)
+   - Start the server (`npm start`)
+
+7. **Your site will be live at:** `https://vanshika-portfolio.onrender.com`
+
+   > You can set up a custom domain in the Render dashboard under **Settings** → **Custom Domain**.
+
+#### Using `render.yaml` (Blueprint)
+
+This project includes a `render.yaml` file for infrastructure-as-code. To use it:
+
+1. Push the `render.yaml` to your GitHub repository
+2. In Render dashboard, click **"New +"** → **"Blueprint"**
+3. Select your repository — Render will automatically read the `render.yaml` and create the service
+
+This approach is great for keeping your deployment configuration version-controlled.

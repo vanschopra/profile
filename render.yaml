@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vanshika-portfolio
+    runtime: node
+    repo: https://github.com/vanschopra/profile
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20
