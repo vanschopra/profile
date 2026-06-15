@@ -194,7 +194,7 @@ export default function SlideShowcase() {
           <ScrollReveal delay={0.3}>
             <motion.div
               whileHover={{ y: -3 }}
-              className="bg-[#f8f7f4] rounded-xl p-5 border border-[#e5e5e5] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
+              className="bg-[#f8f7f4] rounded-xl p-4 sm:p-5 border border-[#e5e5e5] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
             >
               <div className="w-9 h-9 rounded-lg bg-[#ede9fe] text-[#8b5cf6] flex items-center justify-center mb-3">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -212,7 +212,7 @@ export default function SlideShowcase() {
           <ScrollReveal delay={0.4}>
             <motion.div
               whileHover={{ y: -3 }}
-              className="bg-[#f8f7f4] rounded-xl p-5 border border-[#e5e5e5] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
+              className="bg-[#f8f7f4] rounded-xl p-4 sm:p-5 border border-[#e5e5e5] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
             >
               <div className="w-9 h-9 rounded-lg bg-[#ede9fe] text-[#8b5cf6] flex items-center justify-center mb-3">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -230,7 +230,7 @@ export default function SlideShowcase() {
           <ScrollReveal delay={0.5}>
             <motion.div
               whileHover={{ y: -3 }}
-              className="bg-[#f8f7f4] rounded-xl p-5 border border-[#e5e5e5] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
+              className="bg-[#f8f7f4] rounded-xl p-4 sm:p-5 border border-[#e5e5e5] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
             >
               <div className="w-9 h-9 rounded-lg bg-[#ede9fe] text-[#8b5cf6] flex items-center justify-center mb-3">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

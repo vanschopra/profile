@@ -112,7 +112,7 @@ function ExperienceCard({
       <motion.div
         whileHover={{ y: -3 }}
         className={`bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-[#e5e5e5] transition-shadow duration-300 hover:shadow-[0_8px_40px_rgba(0,0,0,0.10)] ${
-          compact ? "p-6" : "p-8"
+          compact ? "p-5 sm:p-6" : "p-5 sm:p-8"
         }`}
       >
         <div className="flex gap-4 mb-4">

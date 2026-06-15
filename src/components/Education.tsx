@@ -33,7 +33,7 @@ export default function Education() {
             <ScrollReveal key={edu.degree}>
               <motion.div
                 whileHover={{ y: -4 }}
-                className="bg-white rounded-2xl p-7 shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-[#e5e5e5] transition-shadow duration-300 hover:shadow-[0_8px_40px_rgba(0,0,0,0.10)]"
+                className="bg-white rounded-2xl p-5 sm:p-7 shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-[#e5e5e5] transition-shadow duration-300 hover:shadow-[0_8px_40px_rgba(0,0,0,0.10)]"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#ede9fe] text-[#8b5cf6] flex items-center justify-center mb-4">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">

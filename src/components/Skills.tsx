@@ -32,7 +32,7 @@ function SkillPill({ skill, index }: { skill: string; index: number }) {
     <ScrollReveal delay={index * 0.03}>
       <motion.span
         whileHover={{ y: -3, scale: 1.03 }}
-        className="inline-block px-5 py-2.5 rounded-full bg-white border border-[#e5e5e5] text-sm font-medium text-[#1a1a1a] shadow-[0_4px_24px_rgba(0,0,0,0.06)] cursor-default transition-all duration-300 hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] hover:shadow-[0_8px_28px_rgba(0,0,0,0.14)] select-none"
+        className="inline-block px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white border border-[#e5e5e5] text-xs sm:text-sm font-medium text-[#1a1a1a] shadow-[0_4px_24px_rgba(0,0,0,0.06)] cursor-default transition-all duration-300 hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] hover:shadow-[0_8px_28px_rgba(0,0,0,0.14)] select-none"
       >
         {skill}
       </motion.span>
