@@ -15,7 +15,7 @@ const contacts = [
     icon: "phone",
   },
   {
-    href: "https://linkedin.com/in/vanshika-chopra",
+    href: "https://www.linkedin.com/in/vanshika-chopra-216300198/",
     label: "LinkedIn",
     icon: "linkedin",
     external: true,

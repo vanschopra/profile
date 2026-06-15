@@ -96,7 +96,7 @@ export default function Hero() {
             </span>
             <span className="text-[#e5e5e5] max-sm:hidden">|</span>
             <a
-              href="https://linkedin.com/in/vanshika-chopra"
+              href="https://www.linkedin.com/in/vanshika-chopra-216300198/"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center gap-1.5 hover:text-[#8b5cf6] transition-colors"
