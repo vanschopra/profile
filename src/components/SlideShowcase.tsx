@@ -58,19 +58,18 @@ export default function SlideShowcase() {
   }, [isDragging, handleMove]);
 
   return (
-    <section id="slide-showcase" className="px-6 py-24 bg-white border-t border-[#e5e5e5]">
+    <section id="work-samples" className="px-6 py-24 bg-white border-t border-[#e5e5e5]">
       <div className="max-w-[920px] mx-auto">
         <ScrollReveal>
           <h2 className="font-playfair text-[2.2rem] mb-3 relative section-underline max-md:text-[1.8rem]">
-            Slide Before &amp; After
+            Work Samples
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
           <p className="text-base text-[#6b6b6b] mb-10 max-w-[540px] leading-relaxed">
-            Redesigned the 6th slide from a basic text layout into a
-            visually engaging infographic — improving clarity, hierarchy, and
-            visual appeal.
+            A selection of design projects showcasing slide makeovers, visual
+            storytelling, and presentation redesign work.
           </p>
         </ScrollReveal>
 
