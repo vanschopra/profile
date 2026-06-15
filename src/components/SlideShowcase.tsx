@@ -68,8 +68,9 @@ export default function SlideShowcase() {
 
         <ScrollReveal delay={0.1}>
           <p className="text-base text-[#6b6b6b] mb-10 max-w-[540px] leading-relaxed">
-            A selection of design projects showcasing slide makeovers, visual
-            storytelling, and presentation redesign work.
+            A presentation redesign showcase — transforming a plain text slide
+            into a structured, visually engaging layout with improved hierarchy
+            and brand-aligned aesthetics.
           </p>
         </ScrollReveal>
 
